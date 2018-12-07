@@ -1,0 +1,43 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.1.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: c7cd24e71e383e86c40dc2334e75c63bd9860ae1eb26eb4a51ee95ca919374f5
+
+name:           region
+version:        0.1.0.0
+homepage:       https://github.com/ollef/region#readme
+bug-reports:    https://github.com/ollef/region/issues
+author:         Olle Fredriksson
+maintainer:     fredriksson.olle@gmail.com
+copyright:      2018 Olle Fredriksson
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/ollef/region
+
+library
+  exposed-modules:
+      Common
+      Core
+      Elaboration
+      Surface
+  other-modules:
+      Paths_region
+  hs-source-dirs:
+      src
+  default-extensions: NoImplicitPrelude
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -Wtabs -funbox-strict-fields
+  build-depends:
+      base >=4.7 && <5
+    , lens
+    , protolude
+    , unordered-containers
+  default-language: Haskell2010
