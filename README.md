@@ -26,7 +26,7 @@ regions alive as long as they are needed (but no longer).
 {f} | Γ |- \x. e : a -f.rs-> b -| {}
 
 
-rs1 | Γ |- e1 : (x : a) -f.frs-> b | rs2    rs2 | Γ |- e2 : a -| frs U {f}
+rs1 | Γ |- e1 : a -f.frs-> b | rs2    rs2 | Γ |- e2 : a -| frs U {f}
 -------------------------------------------------------------------------- app
                   rs1 | Γ |- e1 e2 : b -| {}
 
